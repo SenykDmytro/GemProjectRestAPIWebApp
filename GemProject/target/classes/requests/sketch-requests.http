@@ -1,0 +1,33 @@
+###
+GET http://localhost:8080/api/v1/gemProject/sketches
+
+###
+POST http://localhost:8080/api/v1/gemProject/sketches
+Content-Type: application/json
+
+{
+  "name": "Example 1 of sketch"
+}
+###
+POST http://localhost:8080/api/v1/gemProject/sketches
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Topaz2"
+}
+
+###
+DELETE http://localhost:8080/api/v1/gemProject/sketches/1
+
+###
+GET http://localhost:8080/api/v1/gemProject/sketches/sketch/2
+
+###
+POST http://localhost:8080/api/v1/gemProject/sketches/sketch/1?gemID=2
+Content-Type: application/json
+
+###
+DELETE http://localhost:8080/api/v1/gemProject/sketches/sketch/1?gemID=2
+Content-Type: application/json
+

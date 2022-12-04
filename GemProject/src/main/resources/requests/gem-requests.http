@@ -1,0 +1,31 @@
+###
+GET http://localhost:8080/api/v1/gemProject/gem
+
+###
+POST http://localhost:8080/api/v1/gemProject/gem
+Content-Type: application/json
+
+{
+  "name": "Topaz",
+  "carat": 12.3,
+  "price": 50000.0,
+  "shape": "ef"
+}
+###
+POST http://localhost:8080/api/v1/gemProject/gem
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Topaz",
+  "carat": 12.3,
+  "price": 50000.0,
+  "shape": "ef"
+}
+
+###
+DELETE http://localhost:8080/api/v1/gemProject/gem/1
+
+###
+PUT http://localhost:8080/api/v1/gemProject/gem/2?price=13.13
+Content-Type: application/json
